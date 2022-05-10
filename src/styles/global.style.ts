@@ -6,16 +6,15 @@ export default createGlobalStyle`
   }
 
   * {
-    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
     margin: 0;
     padding: 0;
     outline: 0;
     box-sizing: border-box;
-    font-family: "DM Sans", sans-serif;
+    font-family: 'Inter', sans-serif;
   }
   body {
-    background: #312E38;
-    color: #FFF;
+    background: ${({ theme }) => theme.colors.surfacePrimary};
+    color: ${({ theme }) => theme.colors.textPrimary};
     -webkit-font-smoothing: antialiased;
     font-size: 1.6rem;
   }
